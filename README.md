@@ -35,8 +35,9 @@ Error Count (Python): 1
 Total Lines (Python): 100
 Total Lines (wc -l): 100
 Discrepancy: No
-##  Interface Preview
-![Summary UI](Downloads/Sampleoutput.png)
+## Interface Preview
+![Summary UI](screenshots/sampleoutput.png)
+
 # Project Structure
 file-analyzer/
 ├── app.py             # Main script
