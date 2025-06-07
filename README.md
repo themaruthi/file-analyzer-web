@@ -36,7 +36,7 @@ Total Lines (Python): 100
 Total Lines (wc -l): 100
 Discrepancy: No
 ##  Interface Preview
-![Summary UI](Sampleoutput.png)
+![Sample Output](sampleoutput.png)
 # Project Structure
 file-analyzer/
 ├── app.py             # Main script
