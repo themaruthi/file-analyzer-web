@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Log Analyzer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen font-sans flex flex-col items-center p-6">
+
+  <div class="w-full max-w-3xl bg-white shadow-xl rounded-lg p-8 mt-8">
+    <h1 class="text-3xl font-bold mb-6 text-center text-blue-700">📁 Upload .txt Files for Analysis</h1>
+    
+    <form method="POST" enctype="multipart/form-data" class="flex flex-col md:flex-row items-center justify-center gap-4 mb-6">
+      <input type="file" name="files" multiple accept=".txt" required class="border rounded px-4 py-2 w-full md:w-auto">
+      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">🔍 Analyze</button>
+    </form>
+
+    {% if summary %}
+      <h2 class="text-2xl font-semibold mb-4 text-green-700">📊 Summary</h2>
+      
+      <div class="space-y-4">
+        {% for block in summary.split('========================================') %}
+          {% if block.strip() %}
+            <div class="bg-gray-50 border-l-4 border-blue-400 p-4 rounded shadow">
+              <pre class="whitespace-pre-wrap text-gray-800">{{ block.strip() }}</pre>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="mt-6 flex gap-4">
+        <a href="{{ url_for('download_file', filename='summary.txt') }}" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">
+          📄 Download Summary
+        </a>
+        <a href="{{ url_for('download_file', filename='text_files_archive.tar.gz') }}" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">
+          📦 Download Archive
+        </a>
+      </div>
+    {% endif %}
+  </div>
+
+  <footer class="mt-8 text-gray-500 text-sm">
+    © 2025 | Made with 💻 by Maruthi
+  </footer>
+
+</body>
+</html>

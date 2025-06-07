@@ -1,0 +1,48 @@
+File: log3.txt
+Error Count (Python): 1
+Total Lines (Python): 100
+Total Lines (wc -l): 100
+Discrepancy: No
+========================================
+File: log2.txt
+Error Count (Python): 13
+Total Lines (Python): 100
+Total Lines (wc -l): 100
+Discrepancy: No
+========================================
+File: log1.txt
+Error Count (Python): 3
+Total Lines (Python): 100
+Total Lines (wc -l): 100
+Discrepancy: No
+========================================
+File: log5.txt
+Error Count (Python): 2
+Total Lines (Python): 100
+Total Lines (wc -l): 100
+Discrepancy: No
+========================================
+File: log4.txt
+Error Count (Python): 2
+Total Lines (Python): 100
+Total Lines (wc -l): 100
+Discrepancy: No
+========================================
+File: log6.txt
+Error Count (Python): 13
+Total Lines (Python): 145
+Total Lines (wc -l): 145
+Discrepancy: No
+========================================
+File: log7.txt
+Error Count (Python): 13
+Total Lines (Python): 137
+Total Lines (wc -l): 137
+Discrepancy: No
+========================================
+File: log8.txt
+Error Count (Python): 1
+Total Lines (Python): 155
+Total Lines (wc -l): 155
+Discrepancy: No
+========================================
